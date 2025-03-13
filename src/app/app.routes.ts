@@ -7,7 +7,20 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'principal',
     pathMatch: 'full',
+  },
+  {
+    path: 'botones',
+    loadComponent: () => import('./paginas/botones/botones.page').then( m => m.BotonesPage)
+  },
+  {
+    path: 'card',
+    loadComponent: () => import('./paginas/card/card.page').then( m => m.CardPage)
+  },
+
+  {
+    path: 'principal',
+    loadComponent: () => import('./paginas/principal/principal.page').then( m => m.PrincipalPage)
   },
 ];

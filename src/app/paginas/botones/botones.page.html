@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>botones</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/principal">
+
+      </ion-back-button>
+      
+    </ion-buttons>
+  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button [disabled]="true">Disabled</ion-button>
+  <ion-button expand="block">Block</ion-button>
+  <ion-button expand="full">Full</ion-button>
+  <ion-button>Default</ion-button>
+  <ion-button shape="round">Round</ion-button>
+  <ion-button>
+    <ion-icon slot="icon-only" name="heart"></ion-icon>
+  </ion-button>
+  <ion-button shape="round">
+    <ion-icon slot="icon-only" name="heart-half"></ion-icon>
+  </ion-button>
+  <ion-button>
+    <ion-icon name ="add-circle-outline"></ion-icon>
+  </ion-button>
+  </ion-content>
