@@ -7,16 +7,22 @@ import { AppComponent } from './app/app.component';
 import { addIcons } from 'ionicons';
 import {
   addCircleOutline,
+  headsetOutline,
   heartHalf,
   personAddOutline,
-
-
+  star,
+  heart,
+  call,
 } from 'ionicons/icons'
 // agregar iconocs
 addIcons({
 'add-circle-outline':addCircleOutline,
 'heart-half':heartHalf,
 'person-add-outline':personAddOutline,
+'headset-outline':headsetOutline,
+'star':star,
+'heart':heart,
+'call':call,
 });
 //fin agregar iconos
 bootstrapApplication(AppComponent, {

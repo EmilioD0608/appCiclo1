@@ -23,4 +23,8 @@ export const routes: Routes = [
     path: 'principal',
     loadComponent: () => import('./paginas/principal/principal.page').then( m => m.PrincipalPage)
   },
+  {
+    path: 'swiper',
+    loadComponent: () => import('./paginas/swiper/swiper.page').then( m => m.SwiperPage)
+  },
 ];

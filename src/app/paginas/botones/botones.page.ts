@@ -17,4 +17,11 @@ export class BotonesPage implements OnInit {
   ngOnInit() {
   }
 
+  fun_saludarConsola(){
+    console.log("hola mundo")
+  }
+  fun_saludaNavegador(){
+    alert("Hola diablo")
+  }
+
 }
