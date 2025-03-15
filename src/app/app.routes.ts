@@ -7,7 +7,7 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'principal',
+    redirectTo: 'card',
     pathMatch: 'full',
   },
   {
@@ -26,5 +26,9 @@ export const routes: Routes = [
   {
     path: 'swiper',
     loadComponent: () => import('./paginas/swiper/swiper.page').then( m => m.SwiperPage)
+  },
+  {
+    path: 'lector-qr',
+    loadComponent: () => import('./paginas/lector-qr/lector-qr.page').then( m => m.LectorQRPage)
   },
 ];
