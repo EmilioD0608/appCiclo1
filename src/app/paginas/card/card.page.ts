@@ -2,13 +2,19 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
-import{IonicModule} from '@ionic/angular'
+import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, } from '@ionic/angular/standalone';
+import { IonButton,IonButtons,IonBackButton } from '@ionic/angular/standalone';
+import { IonIcon, IonSegment, IonSegmentButton } from '@ionic/angular/standalone';
 @Component({
   selector: 'app-card',
   templateUrl: './card.page.html',
   styleUrls: ['./card.page.scss'],
   standalone: true,
-  imports: [IonicModule, CommonModule]//IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [IonCard,IonBackButton, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle,
+    IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule,
+    IonButton,IonButtons,IonBackButton,IonIcon,
+    IonSegment, IonSegmentButton
+  ]
 })
 export class CardPage implements OnInit {
 

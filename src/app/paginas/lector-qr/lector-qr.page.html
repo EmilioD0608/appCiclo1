@@ -11,18 +11,20 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-button expand="full" (click)="escanearQR()">Escanear Código QR</ion-button>
-<div *ngIF="qrResult" class ="qr-result">
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Resultado del escaneo</ion-card-title>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="scan()">
+      <ion-icon name="qr-code-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 
-    </ion-card-header>
-    <ion-card-content>
-      {{qrResult}}
-    </ion-card-content>
-  </ion-card>
-
-</div>
-
+  <div *ngIf="scanResult">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Resultado Escaneado</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>{{ scanResult }}</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>

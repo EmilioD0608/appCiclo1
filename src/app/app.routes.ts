@@ -7,7 +7,7 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'card',
+    redirectTo: 'botones',
     pathMatch: 'full',
   },
   {
