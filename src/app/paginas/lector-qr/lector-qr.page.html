@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>lectorQR</ion-title>
+    <ion-title>Escaner Qr</ion-title>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/principal">
 
@@ -9,22 +9,39 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
+<ion-content class="ion-padding dark-theme">
+  <div class="scanner-container">
+    <div class="scanner-wrapper">
+      <ion-card class="dark-card">
+        <ion-card-header>
+          <ion-card-title class="center-title">Escanea tu Código QR</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <div class="scanner-frame">
+            <ion-icon name="scan-circle-outline" class="scan-icon"></ion-icon>
+          </div>
+          <ion-button expand="full" color="warning" (click)="scan()">
+            <ion-icon slot="start" name="qr-code-outline"></ion-icon>
+            Iniciar Escaneo
+          </ion-button>
+        </ion-card-content>
+      </ion-card>
 
-<ion-content [fullscreen]="true">
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button (click)="scan()">
-      <ion-icon name="qr-code-outline"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
-
-  <div *ngIf="scanResult">
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title>Resultado Escaneado</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <p>{{ scanResult }}</p>
-      </ion-card-content>
-    </ion-card>
+      <div *ngIf="scanResult">
+        <ion-card class="dark-card scan-result-card">
+          <ion-card-header>
+            <ion-card-title class="center-title">Resultado Escaneado</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <a [href]="scanResult" target="_blank" class="scan-result-link">
+              <span class="scan-result-text">{{ scanResult }}</span>
+              <ion-icon slot="end" name="open-outline"></ion-icon>
+            </a>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </div>
   </div>
+
+  
 </ion-content>

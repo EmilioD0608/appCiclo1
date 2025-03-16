@@ -13,6 +13,10 @@ import {
   heart,
   call,
   scan,
+  scanOutline,
+  qrCodeOutline,
+  scanCircleOutline,
+  openOutline
 } from 'ionicons/icons'
 // agregar iconocs
 addIcons({
@@ -24,6 +28,10 @@ addIcons({
 'heart':heart,
 'call':call,
 'scan':scan,
+'scan-outline':scanOutline,
+'qr-code-outline':qrCodeOutline,
+'scan-circle-outline':scanCircleOutline,
+'open-outline':openOutline
 });
 //fin agregar iconos
 bootstrapApplication(AppComponent, {

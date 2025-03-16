@@ -11,8 +11,7 @@ import { IonIcon, IonSegment, IonSegmentButton } from '@ionic/angular/standalone
   styleUrls: ['./card.page.scss'],
   standalone: true,
   imports: [IonCard,IonBackButton, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle,
-    IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule,
-    IonButton,IonButtons,IonBackButton,IonIcon,
+    IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule,IonButtons,IonBackButton,IonIcon,
     IonSegment, IonSegmentButton
   ]
 })
