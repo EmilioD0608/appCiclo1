@@ -1,0 +1,27 @@
+[
+    {
+    "cli_cedula":"2450868704",
+    "cli_nombres":"Emilio Delgado",
+    "cli_direccion":"Ballenita",
+    "cli_telefono":"0999251884"
+    },
+    {
+    "cli_cedula":"2550868704",
+    "cli_nombres":"David Delgado",
+    "cli_direccion":"Ballenita",
+    "cli_telefono":"0999251884"
+    },
+    {
+        "cli_cedula":"2650868704",
+        "cli_nombres":"Ladines Delgado",
+        "cli_direccion":"Ballenita",
+        "cli_telefono":"0999251884"
+    },
+    {
+    "cli_cedula":"2750868704",
+    "cli_nombres":"Delgado Ladines",
+    "cli_direccion":"Ballenita",
+    "cli_telefono":"0999251884"
+    }
+
+]

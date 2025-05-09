@@ -1,0 +1,1 @@
+import{E as n,a as i,b as o}from"./chunk-6YZ34SDI.js";var l=(()=>{let t=class t{constructor(r){this.http=r}get_Clientes(){return this.http.get("assets/BD/clientes.json")}};t.\u0275fac=function(s){return new(s||t)(o(n))},t.\u0275prov=i({token:t,factory:t.\u0275fac,providedIn:"root"});let e=t;return e})();export{l as a};
